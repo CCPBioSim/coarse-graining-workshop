@@ -1,0 +1,9 @@
+# Ignore everything by default
+*
+
+# But keep cg_sims/
+!cg_sims/
+!cg_sims/**
+
+# Keep .gitignore itself
+!.gitignore
