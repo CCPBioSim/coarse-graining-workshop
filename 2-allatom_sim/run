@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+gmx grompp -f mdp-files/production.mdp -c step6.6_equilibration.gro -t step6.6_equilibration.cpt -p topol.top -n index.ndx -o production.tpr
+gmx mdrun -v -deffnm production

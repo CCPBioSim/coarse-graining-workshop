@@ -1,0 +1,20 @@
+define                  = 
+integrator              = steep
+emtol                   = 1000.0
+emstep			= 0.02
+nsteps                  = 100000
+nstlist                 = 10
+cutoff-scheme           = Verlet
+rlist                   = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+coulombtype             = pme
+rcoulomb                = 1.2
+;
+constraints             = none
+constraint_algorithm    = LINCS
+lincs_order             = 4
+lincs_warnangle         = 90
+

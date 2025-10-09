@@ -1,0 +1,51 @@
+; NVT input for CHARMM36
+
+define			 = -DPOSRES
+integrator               = md
+dt                       = 0.002
+nsteps                   = 100000 ; 200ps NVT equilibration
+nstcomm                  = 100
+comm-grps		 =
+refcoord_scaling	 = com 
+
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 1000
+nstenergy                = 1000
+nstxout-compressed       = 1000
+compressed-x-precision   = 1000
+compressed-x-grps        = 
+
+cutoff-scheme            = Verlet
+nstlist                  = 20
+ns_type                  = grid
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdw_type                 = cutoff  
+vdw-modifier             = force-switch
+rlist			 = 1.2
+rvdw                     = 1.2
+rvdw-switch		 = 1.0
+
+tcoupl                   = v-rescale 
+tc-grps                  = SOLU MEMB SOLV
+tau_t                    = 1.0  1.0 1.0
+ref_t                    = 310 310 310
+Pcoupl                   = no
+
+gen_vel                  = yes
+gen_temp                 = 310
+gen_seed                 = -1
+
+constraints              = h-bonds
+constraint_algorithm     = Lincs
+continuation 		 = no
+lincs_order 		 = 4
+lincs_warnangle		 = 90
+periodic-molecules     	 = no
+
+DispCorr		 = no
