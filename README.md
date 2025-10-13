@@ -1,8 +1,7 @@
 ### Introduction to coarse graining: 2025 CCPBioSim Training Week
 Authors: <i>Robert Clark, Iain Peter Shand Smith</i>
 
-Here we present a practical introduction to the construction and simulation of coarse-grained (CG) membrane protein systems.\
-We have also included a comparison to an equivalent all-atom (AA) simulation in order to raise awareness of where each has merit.
+Here we present a practical introduction to the construction and simulation of coarse-grained (CG) membrane protein systems.We have also included a comparison to an equivalent all-atom (AA) simulation in order to raise awareness of where each has merit.
 
 We have separated the content into 5 conceptually distinct parts:
 
