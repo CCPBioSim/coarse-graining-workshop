@@ -1,0 +1,23 @@
+define                   = -DFLEXIBLE
+integrator               = steep
+tinit                    = 0.0
+nsteps                   = 10000
+emtol			 = 1000
+
+nstlog                   = 100
+nstenergy                = 100
+nstxout			 = 100
+
+cutoff-scheme            = Verlet
+nstlist                  = 20
+ns_type                  = grid
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+epsilon_r                = 15
+coulombtype              = reaction-field
+rcoulomb                 = 1.1
+vdw_type                 = cutoff
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+

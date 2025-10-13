@@ -1,0 +1,22 @@
+#include "toppar/M3-Lipid-Parameters/ITPs/martini_v3.0.0.itp"
+#include "toppar/M3-Lipid-Parameters/ITPs/martini_v3.0.0_ffbonded_v2.itp"
+#include "toppar/M3-Lipid-Parameters/ITPs/martini_v3.0.0_ions_v1.itp"
+#include "toppar/M3-Lipid-Parameters/ITPs/martini_v3.0.0_solvents_v1.itp"
+#include "toppar/M3-Lipid-Parameters/ITPs/martini_v3.0.0_phospholipids_PE_v2.itp"
+#include "toppar/M3-Lipid-Parameters/ITPs/martini_v3.0.0_phospholipids_PG_v2.itp"
+#include "toppar/molecule_0.itp"
+
+[ system ]
+; name
+initial_state
+
+[ molecules ]
+; name number
+molecule_0     1
+POPE         177
+POPG          47
+POPE         169
+POPG          45
+W          12008
+NA           225
+CL           130

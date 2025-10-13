@@ -1,0 +1,53 @@
+; NPT input for CHARMM36
+
+define			 = 
+integrator               = md
+dt                       = 0.002
+nsteps                   = 1000000 ; 2ns NPT
+nstcomm                  = 100
+comm-grps		 =
+
+nstxout                  = 0
+nstvout                  = 0
+nstfout                  = 0
+nstlog                   = 2000
+nstenergy                = 1000
+nstxout-compressed       = 5000
+compressed-x-precision   = 1000
+compressed-x-grps        = 
+
+cutoff-scheme            = Verlet
+nstlist                  = 20
+ns_type                  = grid
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdw_type                 = cutoff  
+vdw-modifier             = force-switch
+rlist			 = 1.2
+rvdw                     = 1.2
+rvdw-switch		 = 1.0
+
+tcoupl                   = v-rescale 
+tc-grps                  = SOLU MEMB SOLV
+tau_t                    = 1.0  1.0 1.0
+ref_t                    = 310 310 310
+Pcoupl                   = c-rescale
+Pcoupltype               = semiisotropic
+tau_p                    = 5.0 
+compressibility          = 4.5e-5 4.5e-5
+ref_p                    = 1.0 1.0
+refcoord-scaling	 = all
+
+gen_vel                  = no
+
+constraints              = h-bonds
+constraint_algorithm     = Lincs
+continuation 		 = yes
+lincs_order 		 = 4
+lincs_warnangle		 = 90
+periodic-molecules     	 = yes
+
+DispCorr		 = no

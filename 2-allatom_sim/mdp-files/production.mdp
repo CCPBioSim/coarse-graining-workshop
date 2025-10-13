@@ -1,0 +1,51 @@
+integrator              = md
+dt                      = 0.002
+nsteps                  = 50000000 ; 100 ns
+nstlog                  = 50000
+nstxout                 = 0
+nstvout                 = 0
+nstfout                 = 0
+nstcalcenergy           = 50000
+nstenergy               = 50000
+nstxout-compressed      = 100000
+compressed-x-precision  = 1000
+;
+cutoff-scheme           = Verlet
+nstlist                 = 20
+ns_type			= grid
+pbc 			= xyz
+verlet-buffer-tolerance	= 0.005
+
+coulombtype              = PME
+rcoulomb                 = 1.2
+vdw_type                 = cutoff  
+vdw-modifier             = force-switch
+rlist			 = 1.2
+rvdw                     = 1.2
+rvdw-switch		 = 1.0
+
+
+;
+tcoupl                  = v-rescale
+tc_grps                 = SOLU MEMB SOLV
+tau_t                   = 1.0    1.0 1.0
+ref_t                   = 310 310 310
+;
+pcoupl                  = c-rescale
+pcoupltype              = semiisotropic 
+tau_p                   = 5.0
+compressibility         = 4.5e-5 4.5e-5
+ref_p                   = 1.0  1.0
+;
+constraints             = h-bonds
+constraint_algorithm    = LINCS
+continuation            = yes
+lincs_order		= 4
+lincs_warnangle		= 90
+periodic-molecules	= yes
+;
+nstcomm                 = 100
+comm_mode               = linear
+comm_grps               = SOLU MEMB SOLV
+;
+refcoord_scaling        = all
