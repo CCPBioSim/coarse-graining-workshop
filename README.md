@@ -15,7 +15,7 @@ The user should work sequentially through each numbered directory within this re
 starting from `1-assembly` and finishing with `5-analysis`
 
 
-We acknowledge the work published by the Vanni lab which inspired the topic of this practical:
+We acknowledge the work published by the `Vanni lab` which inspired the topic of this practical:
 
 <b>Lipid scrambling is a general feature of protein insertases</b>\
 <i>Li D., Rocha-Roa C., Schilling M.A., Vanni S.</i>\
