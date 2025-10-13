@@ -1,0 +1,21 @@
+# ----------------------------
+# Ignore everything by default
+# ----------------------------
+*
+
+# ----------------------------
+# But include these shared folders
+# ----------------------------
+!cg_sims/
+!cg_sims/cg_system_setup/
+!cg_sims/cg_production_analysis/
+!environment.yml
+
+# ----------------------------
+# Allow git metadata and ignore OS clutter
+# ----------------------------
+!.gitignore
+!.git/
+*.log
+*.tmp
+.DS_Store
