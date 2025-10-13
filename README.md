@@ -12,7 +12,7 @@ We have separated the content into 5 conceptually distinct parts:
 5) Analysis of protein function and membrane dynamics
 
 The user should work sequentially through each numbered directory within this repo\
-starting from `1-assembly` and finishing with `5-analysis`
+starting from `1-allatom_setup` and finishing with `5-coarsegrain_analysis`
 
 
 We acknowledge the work published by the `Vanni lab` which inspired the topic of this practical:
