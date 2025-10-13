@@ -18,7 +18,7 @@ starting from `1-assembly` and finishing with `5-analysis`
 
 We acknowledge the work published by the Vanni lab which inspired the topic of this practical:
 
-<b>Lipid scrambling is a general feature of protein insertases</b>
-<i>Li D., Rocha-Roa C., Schilling M.A., Vanni S.</i>
+<b>Lipid scrambling is a general feature of protein insertases</b>\
+<i>Li D., Rocha-Roa C., Schilling M.A., Vanni S.</i>\
 https://www.pnas.org/doi/10.1073/pnas.2319476121
 
