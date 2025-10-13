@@ -1,1 +1,0 @@
-### Martini lipid Benchmark (MIB)
