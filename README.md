@@ -1,4 +1,4 @@
-# CCPBioSim Clustering Workshop
+# CCPBioSim Coarse-Graining Workshop
 
 [![ci](https://github.com/ccpbiosim/coarse-graining-workshop/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/ccpbiosim/coarse-graining-workshop/actions/workflows/build.yaml)
 [![latest](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fccpbiosim.github.io%2Fworkshop.json&query=%24.containers.coarse-graining-workshop.latest&labelColor=grey&logo=github&logoColor=white&label=latest&color=purple)](https://github.com/ccpbiosim/coarse-graining-workshop/pkgs/container/coarse-graining-workshop)
