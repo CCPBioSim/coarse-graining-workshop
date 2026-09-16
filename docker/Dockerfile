@@ -19,7 +19,7 @@ RUN conda install -y -c conda-forge \
     conda-forge::tqdm=4.67.1 \
     conda-forge::mdtraj=1.11.0 \
     conda-forge::iprogress=0.4 \
-    conda-forge::ipywidgets=8.1.9
+    conda-forge::ipywidgets=8.1.9 \
     conda-forge::gromacs=2024.5=nompi_*
 RUN pip install --no-cache-dir \
     alphashape==1.3.1 \
