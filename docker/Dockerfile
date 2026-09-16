@@ -11,14 +11,27 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-RUN if [ "$TARGETPLATFORM" = "linux/amd64" ]; then \
-      mamba install conda-forge/linux-64::gromacs=2024.5=nompi_h5f56185_100 -y; \
-    elif [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
-      mamba install conda-forge/linux-aarch64::gromacs=2024.5=nompi_h9afd374_100 -y; \
-    fi
-RUN mamba install matplotlib=3.10.6 mdanalysis=2.9.0 numpy=2.3.3 scikit-learn=1.7.2 tqdm=4.67.1 mdtraj=1.11.0 iprogress ipywidgets -y
-RUN pip install alphashape==1.3.1 click==8.3.0 click-log==0.4.0 coby==1.0.9 pbr==7.0.1 rtree==1.4.1 shapely==2.1.2 trimesh==4.8.3 vermouth==0.15.0
-
+RUN conda install -y -c conda-forge \
+    conda-forge::matplotlib=3.10.6 \
+    conda-forge::mdanalysis=2.9.0 \
+    conda-forge::numpy=2.3.3 \
+    conda-forge::scikit-learn=1.7.2 \
+    conda-forge::tqdm=4.67.1 \
+    conda-forge::mdtraj=1.11.0 \
+    conda-forge::iprogress=0.4 \
+    conda-forge::ipywidgets=8.1.9
+    conda-forge::gromacs=2024.5=nompi_*
+RUN pip install --no-cache-dir \
+    alphashape==1.3.1 \
+    click==8.3.0 \
+    click-log==0.4.0 \
+    coby==1.0.9 \
+    pbr==7.0.1 \
+    rtree==1.4.1 \
+    shapely==2.1.2 \
+    trimesh==4.8.3 \
+    vermouth==0.15.0
+    
 # Get workshop files and move them to jovyan directory.
 COPY --chown=1000:100 . .
 RUN rm -rf environment.yml LICENSE README.md docker .git .github
