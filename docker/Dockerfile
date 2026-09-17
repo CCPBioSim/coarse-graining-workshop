@@ -12,7 +12,7 @@ WORKDIR $HOME
 
 # Install workshop deps
 RUN conda install -y -c conda-forge \
-    conda-forge::matplotlib=3.11.1 \
+    conda-forge::matplotlib=3.10.6 \
     conda-forge::mdanalysis=2.9.0 \
     conda-forge::numpy=2.3.3 \
     conda-forge::scikit-learn=1.7.2 \
@@ -20,7 +20,7 @@ RUN conda install -y -c conda-forge \
     conda-forge::mdtraj=1.11.0 \
     conda-forge::iprogress=0.4 \
     conda-forge::ipywidgets=8.1.9 \
-    conda-forge::gromacs=2024.5=nompi_*
+    conda-forge::gromacs=2026.3=nompi_*
 RUN pip install --no-cache-dir \
     alphashape==1.3.1 \
     click==8.3.0 \
