@@ -17,7 +17,7 @@ RUN conda install -y -c conda-forge \
     conda-forge::numpy=2.3.3 \
     conda-forge::scikit-learn=1.7.2 \
     conda-forge::tqdm=4.67.1 \
-    conda-forge::mdtraj=1.11.0 \
+    conda-forge::mdtraj=1.11.1 \
     conda-forge::iprogress=0.4 \
     conda-forge::ipywidgets=8.1.9 \
     conda-forge::gromacs=2026.3=nompi_*
