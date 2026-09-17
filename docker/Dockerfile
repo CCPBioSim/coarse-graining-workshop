@@ -25,7 +25,7 @@ RUN pip install --no-cache-dir \
     alphashape==1.3.1 \
     click==8.3.0 \
     click-log==0.4.0 \
-    coby==1.0.9 \
+    coby==1.0.14 \
     pbr==7.0.1 \
     rtree==1.4.1 \
     shapely==2.1.2 \
