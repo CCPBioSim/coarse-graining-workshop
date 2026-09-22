@@ -29,7 +29,7 @@ RUN pip install --no-cache-dir \
     pbr==7.0.3 \
     rtree==1.4.1 \
     shapely==2.1.2 \
-    trimesh==4.12.2 \
+    trimesh==5.1.0 \
     vermouth==0.15.0
     
 # Get workshop files and move them to jovyan directory.
