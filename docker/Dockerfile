@@ -28,7 +28,7 @@ RUN pip install --no-cache-dir \
     coby==1.0.15 \
     pbr==7.1.3 \
     rtree==1.4.1 \
-    shapely==2.1.2 \
+    shapely==2.2.0 \
     trimesh==5.1.1 \
     vermouth==0.15.0
     
