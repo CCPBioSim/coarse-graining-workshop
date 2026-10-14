@@ -14,7 +14,7 @@ WORKDIR $HOME
 RUN conda install -y -c conda-forge \
     conda-forge::matplotlib=3.11.2 \
     conda-forge::mdanalysis=2.10.0 \
-    conda-forge::numpy=2.5.3 \
+    conda-forge::numpy=2.5.4 \
     conda-forge::scikit-learn=1.9.1 \
     conda-forge::tqdm=4.70.1 \
     conda-forge::mdtraj=1.11.2 \
